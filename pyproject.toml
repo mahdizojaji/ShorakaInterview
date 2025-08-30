@@ -1,0 +1,41 @@
+[project]
+name = "bimahbazarshorakainterview"
+version = "0.1.0"
+description = "Shoraka interview project"
+authors = [{ name = "Mahdi Zojaji", email = "mmahdizojajim@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.16.5",
+    "asyncpg>=0.30.0",
+    "fastapi>=0.116.1",
+    "httpx>=0.27.0",
+    "psycopg2>=2.9.10",
+    "pydantic-settings>=2.10.1",
+    "pyjwt>=2.10.1",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=0.24.0",
+    "python-multipart>=0.0.20",
+    "redis>=6.4.0",
+    "sqlalchemy>=2.0.43",
+    "sqlmodel>=0.0.24",
+    "uvicorn>=0.35.0",
+]
+
+[dependency-groups]
+dev = [
+    "django-stubs>=5.2.2",
+    "pre-commit>=4.3.0",
+    "ruff>=0.12.11",
+]
+
+[[tool.uv.index]]
+url = "https://mirror-pypi.runflare.com/simple"
+default = true
+
+[tool.ruff]
+line-length = 120
+lint.select = ["E", "F", "W", "A", "PLC", "PLE", "PLW", "I"]
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 120

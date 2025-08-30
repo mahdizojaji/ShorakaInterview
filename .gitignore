@@ -1,5 +1,6 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
+*.pyc
 *.py[cod]
 *$py.class
 
@@ -12,10 +13,6 @@ venv/
 *.sqlite3
 *.db
 *.db-journal
-
-# Migrations (optional)
-alembic/versions/*.pyc
-alembic/versions/__pycache__/
 
 # VS Code settings
 .vscode/

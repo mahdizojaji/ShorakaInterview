@@ -1,0 +1,14 @@
+[flake8]
+max-line-length = 120
+exclude=
+    */migrations/*
+    .git,
+    .gitignore,
+    *.pot,
+    *.py[co],
+    __pycache__,
+    venv,
+    .env,
+    local_settings.py
+per-file-ignores =
+    switch/settings.py: F401,E402,F403
