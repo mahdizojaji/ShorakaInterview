@@ -16,7 +16,6 @@ class ShortURLResponse(BaseModel):
     model_config = {"from_attributes": True}
 
     @field_validator("original_url", mode="before")
-    @classmethod
     def validate_original_url(cls, v):
         """Convert HttpUrl to string if needed"""
         if hasattr(v, "str"):
